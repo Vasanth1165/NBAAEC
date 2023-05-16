@@ -30,11 +30,11 @@ class MyDept extends StatelessWidget {
               return AnimationConfiguration.staggeredList(
                 position: index,
                 child: FlipAnimation(
-                  curve: Curves.easeInOutCirc,
-                  delay: const Duration(milliseconds: 400),
-                  duration: const Duration(milliseconds: 200),
-                  child: ScaleAnimation(
-                    curve: Curves.easeInCirc,
+                  curve: Curves.bounceInOut,
+                  delay: const Duration(milliseconds: 500),
+                  duration: const Duration(milliseconds: 500),
+                  child: SlideAnimation(
+                    curve: Curves.bounceInOut,
                     duration: const Duration(milliseconds: 200),
                     delay: const Duration(milliseconds: 200),
                     child: InkWell(
