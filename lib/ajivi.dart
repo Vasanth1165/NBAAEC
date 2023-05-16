@@ -61,6 +61,18 @@ class _MyAjviState extends State<MyAjvi> {
             const SizedBox(
               height: 15,
             ),
+            const Center(
+                child: Text(
+              'Our Recruiters',
+              style: TextStyle(fontSize: 32, color: Color(0xffF96E07)),
+            )),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Container(
+                color: Colors.white,
+                child: const Image(image: AssetImage('assets/IMG/PM.png')),
+              ),
+            )
           ],
         ),
       ),

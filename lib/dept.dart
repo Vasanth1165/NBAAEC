@@ -6,15 +6,15 @@ class MyDept extends StatelessWidget {
   MyDept({super.key});
 
   final List<MyDeptPdf> _pdf = [
-    MyDeptPdf(imgPath: 'assets/IMG/CIVIL.jpg', pdfPath: 'assets/PDF/PP.pdf'),
-    MyDeptPdf(imgPath: 'assets/IMG/EEE.jpg', pdfPath: 'assets/PDF/PP.pdf'),
-    MyDeptPdf(imgPath: 'assets/IMG/MECH.jpg', pdfPath: 'assets/PDF/PP.pdf'),
-    MyDeptPdf(imgPath: 'assets/IMG/ECE.jpg', pdfPath: 'assets/PDF/PP.pdf'),
-    MyDeptPdf(imgPath: 'assets/IMG/CSE.jpg', pdfPath: 'assets/PDF/PP.pdf'),
-    MyDeptPdf(imgPath: 'assets/IMG/MIN.jpg', pdfPath: 'assets/PDF/PP.pdf'),
-    MyDeptPdf(imgPath: 'assets/IMG/PET.jpg', pdfPath: 'assets/PDF/PP.pdf'),
-    MyDeptPdf(imgPath: 'assets/IMG/AIML.jpg', pdfPath: 'assets/PDF/PP.pdf'),
-    MyDeptPdf(imgPath: 'assets/IMG/IT.jpg', pdfPath: 'assets/PDF/PP.pdf'),
+    MyDeptPdf(imgPath: 'assets/IMG/CIVIL.png', pdfPath: 'assets/PDF/PP.pdf'),
+    MyDeptPdf(imgPath: 'assets/IMG/EEE.png', pdfPath: 'assets/PDF/PP.pdf'),
+    MyDeptPdf(imgPath: 'assets/IMG/MECH.png', pdfPath: 'assets/PDF/PP.pdf'),
+    MyDeptPdf(imgPath: 'assets/IMG/ECE.png', pdfPath: 'assets/PDF/PP.pdf'),
+    MyDeptPdf(imgPath: 'assets/IMG/CSE.png', pdfPath: 'assets/PDF/PP.pdf'),
+    MyDeptPdf(imgPath: 'assets/IMG/MIN.png', pdfPath: 'assets/PDF/PP.pdf'),
+    MyDeptPdf(imgPath: 'assets/IMG/PET.png', pdfPath: 'assets/PDF/PP.pdf'),
+    MyDeptPdf(imgPath: 'assets/IMG/AIML.png', pdfPath: 'assets/PDF/PP.pdf'),
+    MyDeptPdf(imgPath: 'assets/IMG/IT.png', pdfPath: 'assets/PDF/PP.pdf'),
     MyDeptPdf(imgPath: 'assets/IMG/AGRI.png', pdfPath: 'assets/PDF/PP.pdf'),
   ];
 

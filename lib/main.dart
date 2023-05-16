@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:particles_flutter/particles_flutter.dart';
-import 'package:animated_background/animated_background.dart';
 
 import 'slides.dart';
 
@@ -31,25 +30,13 @@ class MyCards extends StatelessWidget {
     double hi = MediaQuery.of(context).size.height;
     double wi = MediaQuery.of(context).size.width;
 
-    ParticleOptions particles = const ParticleOptions(
-      baseColor: Color(0xffF96E07),
-      spawnOpacity: 0.0,
-      opacityChangeRate: 0.25,
-      minOpacity: 0.1,
-      maxOpacity: 0.4,
-      particleCount: 250,
-      spawnMaxRadius: 15.0,
-      spawnMaxSpeed: 100.0,
-      spawnMinSpeed: 30,
-      spawnMinRadius: 7.0,
-    );
-
     return Scaffold(
         floatingActionButton: FloatingActionButton(
-            backgroundColor: const Color(0xffF96E07),
+            elevation: 24,
+            backgroundColor: Colors.white,
             child: const Icon(
               Icons.arrow_forward_outlined,
-              color: Colors.white,
+              color: Colors.deepOrange,
               size: 28,
             ),
             onPressed: () {
@@ -70,30 +57,34 @@ class MyCards extends StatelessWidget {
               SizedBox(
                 height: hi / 2,
                 width: double.infinity,
-                child: CircularParticle(
-                  height: hi / 2,
-                  width: wi,
-                  particleColor: const Color(0xffF96E07),
-                  numberOfParticles: 200,
-                  speedOfParticles: 1.5,
-                  maxParticleSize: 7,
-                  awayRadius: 0,
-                  onTapAnimation: false,
-                  isRandSize: true,
-                  isRandomColor: false,
-                  connectDots: false,
-                  enableHover: false,
+                child: Stack(
+                  children: [
+                    CircularParticle(
+                      height: hi / 2,
+                      width: wi,
+                      particleColor: const Color(0xffF96E07),
+                      numberOfParticles: 300,
+                      speedOfParticles: 1.5,
+                      maxParticleSize: 7,
+                      awayRadius: 0,
+                      onTapAnimation: false,
+                      isRandSize: true,
+                      isRandomColor: false,
+                      connectDots: false,
+                      enableHover: false,
+                    ),
+                    const Center(
+                      child: Padding(
+                        padding: EdgeInsets.all(50.0),
+                        child: ClipRRect(
+                          child: Image(
+                            image: AssetImage('assets/IMG/A.png'),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-                // child: const Center(
-                //   child: Padding(
-                //     padding: EdgeInsets.all(50.0),
-                //     child: ClipRRect(
-                //       child: Image(
-                //         image: AssetImage('assets/IMG/A.png'),
-                //       ),
-                //     ),
-                //   ),
-                // ),
               ),
               Container(
                 height: hi / 2,
