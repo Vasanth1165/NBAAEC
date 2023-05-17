@@ -54,7 +54,7 @@ class _MyAjviState extends State<MyAjvi> {
               padding: EdgeInsets.all(15.0),
               child: Text(
                 'At Aditya, we believe employability is more than a skill; it is an attitude, it is a practice. So, we instill this attitude through continuous training in learning skills, behavioral skills, life skills in addition to aptitude and communication skills.And this training starts in the first year of engineering itself. Specific Campus Recruitment Training programs are conducted in the third year, with an emphasis on problem solving, critical thinking, communication skills and team work.',
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: 18, fontFamily: 'POP'),
                 textAlign: TextAlign.justify,
               ),
             ),
@@ -63,7 +63,7 @@ class _MyAjviState extends State<MyAjvi> {
             ),
             const Center(
                 child: Text(
-              'Our Recruiters',
+              'Our Top Recruiters',
               style: TextStyle(fontSize: 32, color: Color(0xffF96E07)),
             )),
             Padding(

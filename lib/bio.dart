@@ -57,7 +57,7 @@ class _MyBioState extends State<MyBio> {
               padding: const EdgeInsets.all(15.0),
               child: Text(
                 widget.content,
-                style: const TextStyle(fontSize: 24),
+                style: const TextStyle(fontSize: 18, fontFamily: 'POP'),
                 textAlign: TextAlign.justify,
               ),
             ),
