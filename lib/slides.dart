@@ -27,20 +27,20 @@ class _MySlideState extends State<MySlide> {
     },
     {
       'title': 'Principal Presentation',
-      'image': 'assets/IMG/AEI.jpg',
-      'description': 'Principal PPT Presentation',
+      'image': 'assets/IMG/PRINCE.jpg',
+      'description': 'Dr.M SREENIVASA REDDY',
       'class': const MyPdf()
     },
     {
       'title': 'Departments',
-      'image': 'assets/IMG/AEI.jpg',
+      'image': 'assets/IMG/DEPT.jpg',
       'description':
           'Implementation of various courses in the campus help students choose different carieer paths',
       'class': MyDept()
     },
     {
       'title': 'Training & Placement',
-      'image': 'assets/IMG/AEI.jpg',
+      'image': 'assets/IMG/THB.png',
       'description':
           'The effective training programs and the multiple company visits happen through Technical hub and Ajivika',
       'class': const MyTpo()
@@ -113,7 +113,7 @@ class _MySlideState extends State<MySlide> {
                                   style: const TextStyle(
                                     fontSize: 25,
                                     fontWeight: FontWeight.bold,
-                                    fontStyle: FontStyle.italic,
+                                    fontStyle: FontStyle.normal,
                                   ),
                                 ),
                               ),
@@ -130,7 +130,7 @@ class _MySlideState extends State<MySlide> {
                                     fontSize: 18,
                                     color: Colors.black,
                                     fontWeight: FontWeight.w300,
-                                    fontStyle: FontStyle.italic,
+                                    fontStyle: FontStyle.normal,
                                   ),
                                 ),
                               ),

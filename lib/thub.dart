@@ -15,7 +15,8 @@ class MyHub extends StatelessWidget {
         child: ListView.builder(
             itemCount: _data.length,
             itemBuilder: (context, index) {
-              return AnimationConfiguration.staggeredList(
+              return AnimationConfiguration.staggeredGrid(
+                columnCount: 2,
                 position: index,
                 duration: const Duration(milliseconds: 200),
                 delay: const Duration(milliseconds: 200),
@@ -46,7 +47,7 @@ class MyHub extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20)),
                             child: SizedBox(
-                              width: wi / 1.25,
+                              width: wi / 2,
                               height: hi / 4,
                               child: Padding(
                                 padding: const EdgeInsets.all(10.0),

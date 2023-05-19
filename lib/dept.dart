@@ -22,54 +22,35 @@ class MyDept extends StatelessWidget {
   Widget build(BuildContext context) {
     final hi = MediaQuery.of(context).size.height;
     return Scaffold(
+      // appBar: AppBar(backgroundColor: Colors.white30),
       body: Center(
         child: AnimationLimiter(
-          child: ListView.builder(
-            itemCount: _pdf.length,
-            itemBuilder: (context, index) {
-              return AnimationConfiguration.staggeredList(
-                position: index,
-                child: FlipAnimation(
-                  curve: Curves.bounceInOut,
-                  delay: const Duration(milliseconds: 500),
-                  duration: const Duration(milliseconds: 500),
-                  child: SlideAnimation(
-                    curve: Curves.bounceInOut,
-                    duration: const Duration(milliseconds: 200),
-                    delay: const Duration(milliseconds: 200),
-                    child: InkWell(
-                      child: Container(
-                        height: hi / 4,
-                        margin: const EdgeInsets.symmetric(
-                            horizontal: 25, vertical: 10),
-                        decoration: BoxDecoration(
-                            borderRadius:
-                                const BorderRadius.all(Radius.circular(25)),
-                            image: DecorationImage(
-                                image: AssetImage(_pdf[index].imgPath),
-                                fit: BoxFit.fill),
-                            boxShadow: const [
-                              BoxShadow(
-                                color: Colors.grey,
-                                blurRadius: 10,
-                              )
-                            ]),
-                      ),
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => _MyPdf(
-                                      pdfPath: _pdf[index].pdfPath,
-                                    )));
-                      },
+            child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: GridView.builder(
+              itemCount: _pdf.length,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2, mainAxisSpacing: 20, crossAxisSpacing: 20),
+              itemBuilder: (context, index) {
+                return InkWell(
+                  child: Container(
+                    height: hi / 3.5,
+                    color: Colors.white,
+                    child: Image(
+                      image: AssetImage(_pdf[index].imgPath),
+                      fit: BoxFit.fill,
                     ),
                   ),
-                ),
-              );
-            },
-          ),
-        ),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                _MyPdf(pdfPath: _pdf[index].pdfPath)));
+                  },
+                );
+              }),
+        )),
       ),
     );
   }
