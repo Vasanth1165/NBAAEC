@@ -33,7 +33,7 @@ class _MySlideState extends State<MySlide> {
     },
     {
       'title': 'Departments',
-      'image': 'assets/IMG/DEPT.jpg',
+      'image': 'assets/IMG/DEPT.png',
       'description':
           'Implementation of various courses in the campus help students choose different carieer paths',
       'class': MyDept()

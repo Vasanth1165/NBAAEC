@@ -4,10 +4,15 @@ import 'package:flick_video_player/flick_video_player.dart';
 import 'package:video_player/video_player.dart';
 
 class MyBio extends StatefulWidget {
-  const MyBio({super.key, required this.vidPath, required this.content});
+  const MyBio(
+      {super.key,
+      required this.vidPath,
+      required this.content,
+      required this.inPage});
 
   final String vidPath;
   final String content;
+  final String inPage;
 
   @override
   State<MyBio> createState() => _MyBioState();
@@ -52,6 +57,15 @@ class _MyBioState extends State<MyBio> {
             ),
             const SizedBox(
               height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Center(
+                  child: Text(
+                widget.inPage,
+                style:
+                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              )),
             ),
             Padding(
               padding: const EdgeInsets.all(15.0),
