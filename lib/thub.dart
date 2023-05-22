@@ -118,6 +118,24 @@ List<MyData> _data = [
       inPage: 'Codemind',
       content:
           'Code Mind is a platform that focuses on crafting a skilled individual. Our unique and interactive scenario based learning modules are designed to help a student look at a problem in a life like perspective. We strongly believe that every mind isn’t alike, and therefore we give the student a chance to express their opinion rather than trying to abide by a generalized one. The platform also guides students on how they should proceed with their goals and helps them prepare for their dream job in a personalized way.'),
+  MyData(
+      imgPath: 'assets/IMG/insidee.png',
+      vidPath: 'assets/VID/inside.mp4',
+      inPage: 'InsideOut',
+      content:
+          ' Worried about your next interview? Our team of experts are here to guide you through the entire process of acing your next interview.'),
+  MyData(
+      imgPath: 'assets/IMG/T-news.png',
+      vidPath: 'assets/VID/T-news.mp4',
+      inPage: 'T-NEWS',
+      content:
+          ' T- NEWS powered by Technical Hub gives the continuous updates of the Events Competitions Technology Study Results and many more of Technical Hub and Aditya Engineering Colleges.'),
+  MyData(
+      vidPath: 'assets/VID/IV.mp4',
+      imgPath: 'assets/IMG/INTERN.png',
+      content:
+          'We provide internships to our qualified trainees within the campus and help them exercise their skills and work together with our senior team members to gain the right skills in their domain. In addition to mentoring and support we also provide a decent stipend to all our interns to compensate for their contribution towards our team. Upon completion of their internships, trainees are given a service certification and are also offered full time positions based on their performance during their tenure with us.',
+      inPage: 'Internship'),
 ];
 
 class MyData {

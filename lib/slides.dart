@@ -1,6 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-
 import 'about.dart';
 import 'dept.dart';
 import 'princi.dart';
@@ -20,29 +19,35 @@ class _MySlideState extends State<MySlide> {
   final List<dynamic> _products = [
     {
       'title': 'About',
-      'image': 'assets/IMG/AEI.jpg',
+      'image': 'assets/IMG/college.png',
       'description':
-          'The 200 acres huge lush green campus and an eco friendly area is situated at surampalem',
+          'Aditya Engineering college was established in the academic year 2001-02 under the aegis of Aditya Academy, kakinada with the approval of AICTE and Affliated to JNTU with an intake of 180 in three UG Courses in Engineering & Technology.',
+      'content': '',
       'class': const About(),
     },
     {
       'title': 'Principal Presentation',
       'image': 'assets/IMG/PRINCE.jpg',
-      'description': 'Dr.M SREENIVASA REDDY',
+      'description':
+          'Dr.M SREENIVASA REDDY is an expirenced principal with a demonstrated history of working in the education management industry. Skilled in Research, Management, Educational Leadership, Teaching and Higher Education.',
+      'content': '',
       'class': const MyPdf()
     },
     {
       'title': 'Departments',
       'image': 'assets/IMG/DEPT.png',
       'description':
-          'Implementation of various courses in the campus help students choose different carieer paths',
+          'Implementation of various courses in the campus help students choose different carieer paths like CIVIL, EEE, MECH, ECE, CSE, MIN, PET, AI/ML, IT, AGRI ',
+      'content': '',
       'class': MyDept()
     },
     {
       'title': 'Training & Placement',
       'image': 'assets/IMG/THB.png',
       'description':
-          'The effective training programs and the multiple company visits happen through Technical hub and Ajivika',
+          'At Ajivika specific campus recruitment training programs are conducted in the third year ,with an emphasis on problem solving, critical thinking, communication skills and team work.',
+      'content':
+          'Technical Hub provides the trainings which are certification aligned and associated with various vendors that are top in the industry.',
       'class': const MyTpo()
     },
   ];
@@ -134,11 +139,28 @@ class _MySlideState extends State<MySlide> {
                                   ),
                                 ),
                               ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                    left: 20.0, right: 20.0),
+                                child: Text(
+                                  movie['content'],
+                                  textAlign: TextAlign.justify,
+                                  style: const TextStyle(
+                                    fontSize: 18,
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w300,
+                                    fontStyle: FontStyle.normal,
+                                  ),
+                                ),
+                              ),
                             ],
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(top: 80.0),
+                          padding: const EdgeInsets.only(top: 40.0),
                           child: SizedBox(
                             width: 150,
                             child: ElevatedButton(
