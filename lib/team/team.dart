@@ -404,7 +404,6 @@ class MyTeam extends StatefulWidget {
 class _MyTeamState extends State<MyTeam> {
   @override
   Widget build(BuildContext context) {
-    double wid = MediaQuery.of(context).size.width;
     return WillPopScope(
       onWillPop: null,
       child: Scaffold(

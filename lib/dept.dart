@@ -52,7 +52,7 @@ class MyDept extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final hi = MediaQuery.of(context).size.height;
+    
     return Scaffold(
       // appBar: AppBar(backgroundColor: Colors.white30),
       body: Center(
