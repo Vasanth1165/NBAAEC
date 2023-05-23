@@ -37,7 +37,7 @@ class _MySlideState extends State<MySlide> {
       'title': 'Departments',
       'image': 'assets/IMG/DEPT.png',
       'description':
-          'Implementation of various courses in the campus help students choose different carieer paths like CIVIL, EEE, MECH, ECE, CSE, MIN, PET, AI/ML, IT, AGRI ',
+          'Implementation of various courses in the campus help students choose different carieer paths like Civil, Electrical, Mechanical, Electronics, Computer Science, Mining, Petroleum, Artificial Intelligence & Machine Learning, Information Technology, Agricultural, Data Science ',
       'content': '',
       'class': MyDept()
     },

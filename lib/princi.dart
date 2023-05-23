@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
+import 'package:flutter_cached_pdfview/flutter_cached_pdfview.dart';
 // ignore: depend_on_referenced_packages
 
 class MyPdf extends StatefulWidget {
@@ -12,9 +12,12 @@ class MyPdf extends StatefulWidget {
 class _MyPdfState extends State<MyPdf> {
   @override
   Widget build(BuildContext context) {
-    var scaffold = Scaffold(
-        extendBody: true,
-        body: Center(child: SfPdfViewer.asset('assets/PDF/PP.pdf')));
-    return scaffold;
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.orangeAccent,
+          title: const Text('Principal Presentation'),
+          centerTitle: true,
+        ),
+        body: const PDF(swipeHorizontal: true).fromAsset('assets/PDF/PP.pdf'));
   }
 }

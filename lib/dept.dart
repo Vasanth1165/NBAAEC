@@ -1,6 +1,6 @@
 //import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:flutter/material.dart';
-import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
+import 'package:flutter_cached_pdfview/flutter_cached_pdfview.dart';
 
 class MyDept extends StatelessWidget {
   MyDept({super.key});
@@ -9,50 +9,54 @@ class MyDept extends StatelessWidget {
     MyDeptPdf(
         imgPath: 'assets/IMG/civiL.png',
         pdfPath: 'assets/PDF/PP.pdf',
-        iBranch: 'CIVIL'),
+        iBranch: 'Civil'),
     MyDeptPdf(
       imgPath: 'assets/IMG/EEE.png',
       pdfPath: 'assets/PDF/PP.pdf',
-      iBranch: 'EEE',
+      iBranch: 'Electrical',
     ),
     MyDeptPdf(
         imgPath: 'assets/IMG/mechh.png',
         pdfPath: 'assets/PDF/PP.pdf',
-        iBranch: 'MECH'),
+        iBranch: 'Mechanical'),
     MyDeptPdf(
         imgPath: 'assets/IMG/ecee.png',
         pdfPath: 'assets/PDF/PP.pdf',
-        iBranch: 'ECE'),
+        iBranch: 'Electronics'),
     MyDeptPdf(
         imgPath: 'assets/IMG/CSE.png',
         pdfPath: 'assets/PDF/PP.pdf',
-        iBranch: 'CSE'),
+        iBranch: 'Computer science'),
     MyDeptPdf(
         imgPath: 'assets/IMG/MIN.png',
         pdfPath: 'assets/PDF/PP.pdf',
-        iBranch: 'MIN'),
+        iBranch: 'Mining'),
     MyDeptPdf(
         imgPath: 'assets/IMG/peet.png',
         pdfPath: 'assets/PDF/PP.pdf',
-        iBranch: 'PET'),
+        iBranch: 'Petroleum'),
     MyDeptPdf(
         imgPath: 'assets/IMG/AIML.png',
         pdfPath: 'assets/PDF/PP.pdf',
-        iBranch: 'AI/ML'),
+        iBranch: 'Artificial Intelligence & Machine Learning'),
     MyDeptPdf(
         imgPath: 'assets/IMG/itt.png',
         pdfPath: 'assets/PDF/PP.pdf',
-        iBranch: 'IT'),
+        iBranch: 'Informatin Technology'),
     MyDeptPdf(
       imgPath: 'assets/IMG/agrii.png',
       pdfPath: 'assets/PDF/PP.pdf',
-      iBranch: 'AGRI',
+      iBranch: 'Agricultural',
+    ),
+    MyDeptPdf(
+      imgPath: 'assets/IMG/DS.png',
+      pdfPath: 'assets/PDF/PP.pdf',
+      iBranch: 'Data Science',
     ),
   ];
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       // appBar: AppBar(backgroundColor: Colors.white30),
       body: Center(
@@ -106,11 +110,14 @@ class _MyPdf extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var scaffold = Scaffold(
-        appBar: AppBar(
-          title: Text(iBranch),
-        ),
-        body: Center(child: SfPdfViewer.asset(pdfPath)));
-    return scaffold;
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.orangeAccent,
+        title: Text(iBranch),
+      ),
+      body: const PDF(swipeHorizontal: true, enableSwipe: true)
+          .fromAsset('assets/PDF/flutter.pdf'),
+    );
   }
 }

@@ -31,6 +31,8 @@ dependencies:
   animated_background: ^2.0.0
   animated_text_kit: ^4.2.2
   animation_list: ^2.2.1
+  blurrycontainer: ^1.0.2
+  bubble_lens: ^2.0.0
   carousel_slider: ^4.2.1
   cupertino_icons: ^1.0.2
   flick_video_player: ^0.5.0
@@ -39,12 +41,9 @@ dependencies:
   flutter_staggered_animations: ^1.1.1
   page_transition: ^2.0.9
   particles_flutter: ^0.1.4
-  syncfusion_flutter_pdfviewer: ^21.2.4
   text_scroll: ^0.2.0
   video_player: ^2.6.1
-  blurrycontainer: ^1.0.2
-  bubble_lens: ^2.0.0
-
+  flutter_cached_pdfview: ^0.4.1
 dev_dependencies:
   
   flutter_lints: ^2.0.0
