@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:nbaaec/ds.dart';
 import 'about.dart';
-import 'dept.dart';
 import 'princi.dart';
 import 'tp.dart';
 
@@ -34,12 +34,12 @@ class _MySlideState extends State<MySlide> {
       'class': const MyPdf()
     },
     {
-      'title': 'Departments',
+      'title': 'Departments & SAR',
       'image': 'assets/IMG/DEPT.png',
       'description':
-          'Implementation of various courses in the campus help students choose different carieer paths like Civil, Electrical, Mechanical, Electronics, Computer Science, Mining, Petroleum, Artificial Intelligence & Machine Learning, Information Technology, Agricultural, Data Science ',
+          'Implementation of various courses in the campus help students choose different carieer paths like Civil, Electrical, Mechanical, Electronics, Computer Science, Information Technology',
       'content': '',
-      'class': MyDept()
+      'class': const MyDs()
     },
     {
       'title': 'Training & Placement',

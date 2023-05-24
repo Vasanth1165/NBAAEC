@@ -8,51 +8,29 @@ class MyDept extends StatelessWidget {
   final List<MyDeptPdf> _pdf = [
     MyDeptPdf(
         imgPath: 'assets/IMG/civiL.png',
-        pdfPath: 'assets/PDF/PP.pdf',
+        pdfPath: 'assets/PDF/CE_DEPT.pdf',
         iBranch: 'Civil'),
     MyDeptPdf(
       imgPath: 'assets/IMG/EEE.png',
-      pdfPath: 'assets/PDF/PP.pdf',
+      pdfPath: 'assets/PDF/EEE_DEPT.pdf',
       iBranch: 'Electrical',
     ),
     MyDeptPdf(
         imgPath: 'assets/IMG/mechh.png',
-        pdfPath: 'assets/PDF/PP.pdf',
+        pdfPath: 'assets/PDF/ME_DEPT.pdf',
         iBranch: 'Mechanical'),
     MyDeptPdf(
         imgPath: 'assets/IMG/ecee.png',
-        pdfPath: 'assets/PDF/PP.pdf',
+        pdfPath: 'assets/PDF/ECE_DEPT.pdf',
         iBranch: 'Electronics'),
     MyDeptPdf(
         imgPath: 'assets/IMG/CSE.png',
-        pdfPath: 'assets/PDF/PP.pdf',
+        pdfPath: 'assets/PDF/CSE_DEPT.pdf',
         iBranch: 'Computer science'),
     MyDeptPdf(
-        imgPath: 'assets/IMG/MIN.png',
-        pdfPath: 'assets/PDF/PP.pdf',
-        iBranch: 'Mining'),
-    MyDeptPdf(
-        imgPath: 'assets/IMG/peet.png',
-        pdfPath: 'assets/PDF/PP.pdf',
-        iBranch: 'Petroleum'),
-    MyDeptPdf(
-        imgPath: 'assets/IMG/AIML.png',
-        pdfPath: 'assets/PDF/PP.pdf',
-        iBranch: 'Artificial Intelligence & Machine Learning'),
-    MyDeptPdf(
         imgPath: 'assets/IMG/itt.png',
-        pdfPath: 'assets/PDF/PP.pdf',
+        pdfPath: 'assets/PDF/IT_DEPT.pdf',
         iBranch: 'Informatin Technology'),
-    MyDeptPdf(
-      imgPath: 'assets/IMG/agrii.png',
-      pdfPath: 'assets/PDF/PP.pdf',
-      iBranch: 'Agricultural',
-    ),
-    MyDeptPdf(
-      imgPath: 'assets/IMG/DS.png',
-      pdfPath: 'assets/PDF/PP.pdf',
-      iBranch: 'Data Science',
-    ),
   ];
 
   @override
@@ -117,7 +95,7 @@ class _MyPdf extends StatelessWidget {
         title: Text(iBranch),
       ),
       body: const PDF(swipeHorizontal: true, enableSwipe: true)
-          .fromAsset('assets/PDF/flutter.pdf'),
+          .fromAsset(pdfPath),
     );
   }
 }

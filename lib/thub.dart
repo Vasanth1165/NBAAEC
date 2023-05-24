@@ -123,13 +123,13 @@ List<MyData> _data = [
       vidPath: 'assets/VID/inside.mp4',
       inPage: 'InsideOut',
       content:
-          ' Worried about your next interview? Our team of experts are here to guide you through the entire process of acing your next interview.'),
+          'Feeling anxious about your upcoming interview? Our team of seasoned professionals is at your disposal, ready to provide comprehensive guidance and equip you with the essential tools to excel in every stage of your interview through this program. Through this program every individual gets an opportunity enhancing their skills and gets the knowledge on facing the interview better.'),
   MyData(
       imgPath: 'assets/IMG/T-news.png',
       vidPath: 'assets/VID/T-news.mp4',
       inPage: 'T-NEWS',
       content:
-          ' T- NEWS powered by Technical Hub gives the continuous updates of the Events Competitions Technology Study Results and many more of Technical Hub and Aditya Engineering Colleges.'),
+          ' The most recent technological training has brought about a transformative shift in the educational landscape, empowering each individual on campus to enhance their learning capabilities. Enthusiastic tech aficionados are buzzing with anticipation and achieving remarkable success in various domains. This exclusive T News powered by Technical Hub bulletin delivers comprehensive updates on activities, training programs, placement records, and more, fostering not only students academic growth but also nurturing their communication prowess'),
   MyData(
       vidPath: 'assets/VID/IV.mp4',
       imgPath: 'assets/IMG/INTERN.png',

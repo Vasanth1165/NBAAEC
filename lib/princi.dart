@@ -18,6 +18,7 @@ class _MyPdfState extends State<MyPdf> {
           title: const Text('Principal Presentation'),
           centerTitle: true,
         ),
-        body: const PDF(swipeHorizontal: true).fromAsset('assets/PDF/PP.pdf'));
+        body: const PDF(swipeHorizontal: true)
+            .fromAsset('assets/PDF/PRINCI.pdf'));
   }
 }
