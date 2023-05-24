@@ -2,11 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 //import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:particles_flutter/particles_flutter.dart';
+import 'package:flutter/services.dart';
 
 import 'slides.dart';
 
 void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]).then((_) {
+    runApp(const MyApp());
+  });
 }
 
 class MyApp extends StatelessWidget {

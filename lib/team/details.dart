@@ -85,8 +85,9 @@ class DetailsPage extends StatelessWidget {
                         team,
                         style: const TextStyle(
                           color: Colors.black,
+                          fontFamily: 'POP',
                           fontSize: 15,
-                          fontWeight: FontWeight.w100,
+                          fontWeight: FontWeight.w200,
                         ),
                       ),
                       const Divider(
@@ -109,10 +110,10 @@ class DetailsPage extends StatelessWidget {
                   Text(
                     details,
                     style: const TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0),
-                      fontSize: 18,
-                      fontWeight: FontWeight.w200,
-                    ),
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w200,
+                        fontFamily: 'POP'),
                   ),
                 ],
               ))
