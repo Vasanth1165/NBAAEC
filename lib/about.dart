@@ -32,7 +32,10 @@ class _AboutState extends State<About> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBody: true,
+      appBar: AppBar(
+        title: Text('About',style: TextStyle(fontFamily: 'POP'),),
+        centerTitle: true,
+      ),
       body: Center(
         child: AnimationList(
           duration: 1500,

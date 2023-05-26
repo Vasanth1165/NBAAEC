@@ -407,6 +407,10 @@ class _MyTeamState extends State<MyTeam> {
       onWillPop: null,
       child: Scaffold(
         backgroundColor: Colors.white,
+        appBar: AppBar(
+        title: Text('Technicalhub Team',style: TextStyle(fontFamily: 'POP'),),
+        centerTitle: true,
+        ),
         body: Center(
             child: BlurryContainer(
           color: Colors.white,

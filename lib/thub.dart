@@ -11,6 +11,10 @@ class MyHub extends StatelessWidget {
     final wi = MediaQuery.of(context).size.width;
     final hi = MediaQuery.of(context).size.height;
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Technicalhub',style: TextStyle(fontFamily: 'POP'),),
+        centerTitle: true,
+      ),
       body: Column(children: [
         Center(
             child: GestureDetector(

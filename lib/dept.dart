@@ -7,7 +7,7 @@ class MyDept extends StatelessWidget {
 
   final List<MyDeptPdf> _pdf = [
     MyDeptPdf(
-        imgPath: 'assets/IMG/civiL.png',
+        imgPath: 'assets/IMG/CIVIL.png',
         pdfPath: 'assets/PDF/CE_DEPT.pdf',
         iBranch: 'Civil'),
     MyDeptPdf(
@@ -37,6 +37,10 @@ class MyDept extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // appBar: AppBar(backgroundColor: Colors.white30),
+      appBar: AppBar(
+        title: Text('Departments',style: TextStyle(fontFamily: 'POP'),),
+        centerTitle: true,
+      ),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20),

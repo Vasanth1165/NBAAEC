@@ -15,7 +15,7 @@ class _MyPdfState extends State<MyPdf> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.orangeAccent,
-          title: const Text('Principal Presentation'),
+          title: const Text('Principal Presentation',style: TextStyle(fontFamily: 'POP'),),
           centerTitle: true,
         ),
         body: const PDF(swipeHorizontal: true)

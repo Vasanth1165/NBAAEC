@@ -10,6 +10,10 @@ class MyDs extends StatelessWidget {
     final wi = MediaQuery.of(context).size.width;
     final hi = MediaQuery.of(context).size.height;
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Departments & SAR',style: TextStyle(fontFamily: 'POP'),),
+        centerTitle: true,
+      ),
       body: ListView(
         padding: const EdgeInsets.all(25),
         children: [

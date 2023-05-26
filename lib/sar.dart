@@ -7,7 +7,7 @@ class MySar extends StatelessWidget {
 
   final List<MySDeptPdf> _spdf = [
     MySDeptPdf(
-        imgPath: 'assets/IMG/civiL.png',
+        imgPath: 'assets/IMG/CIVIL.png',
         pdfPath: 'assets/PDF/CE_SAR.pdf',
         iBranch: 'Civil'),
     MySDeptPdf(
@@ -36,6 +36,10 @@ class MySar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // appBar: AppBar(backgroundColor: Colors.white30),
+      appBar: AppBar(
+        title: Text('SAR',style: TextStyle(fontFamily: 'POP'),),
+        centerTitle: true,
+      ),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20),

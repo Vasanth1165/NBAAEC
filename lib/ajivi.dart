@@ -32,7 +32,10 @@ class _MyAjviState extends State<MyAjvi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBody: true,
+      appBar: AppBar(
+        title: Text('Ajivika',style: TextStyle(fontFamily: 'POP'),),
+        centerTitle: true,
+      ),
       body: Center(
         child: AnimationList(
           duration: 1500,

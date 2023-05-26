@@ -33,7 +33,10 @@ class _MyThubState extends State<MyThub> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBody: true,
+      appBar: AppBar(
+        title: Text('Technicalhub',style: TextStyle(fontFamily: 'POP'),),
+        centerTitle: true,
+      ),
       body: Center(
         child: AnimationList(
           duration: 1500,
